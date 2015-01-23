@@ -8,10 +8,10 @@
             :url "http://www.gnu.org/licenses/agpl-3.0.html"}
   :dependencies [
                  [cider-ci/clj-auth "2.1.0"]
-                 [cider-ci/clj-utils "2.3.0"]
+                 [cider-ci/clj-utils "2.4.0"]
                  [honeysql "0.4.3"]
                  [me.raynes/fs "1.4.6"]
-                 [org.clojure/tools.nrepl "0.2.6"]
+                 [org.clojure/tools.nrepl "0.2.7"]
                  ]
   ;:pedantic? :warn
   :source-paths [ "src"]
@@ -21,4 +21,5 @@
   :aot [cider-ci.storage.main] 
   :main cider-ci.storage.main 
   :repositories [["tmp" {:url "http://maven-repo-tmp.drtom.ch" :snapshots false}]]
+  :jvm-opts ["-Xmx128m"]
   )
